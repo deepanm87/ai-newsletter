@@ -27,6 +27,24 @@ export default async function CTAButtons() {
           </Button>
         </SignedOut>
 
+        {userId && hasPaidPlan && (
+          <SignedIn>
+            <Button size="lg" className="w-full sm:w-auto" asChild>
+              <Link href="/dashboard" className="flex items-center justify-center">
+                Go to Dashboard <ArrowRight className="ml-2 size-4" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto"
+            >
+              <Link href="#pricing">View Pricing</Link>
+            </Button>
+          </SignedIn>
+        )}
+
         {userId && !hasPaidPlan && (
           <SignedIn>
             <Button size="lg" className="w-full sm:w-auto" asChild>

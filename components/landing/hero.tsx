@@ -25,6 +25,10 @@ export function Hero() {
             Stop spending hours curating content. Let AI transform your RSS feeds into engaging newsletters with perfect titles, subject lines, and content.
           </p>
 
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <CTAButtons />
+          </div>
+
           <p className="mt-8 text-sm text-gray-500 dark:text-gray-500">
             Join 1,000+ newsletter creators saving 5+ hoiurs every week. Starting at $9/month.
           </p>

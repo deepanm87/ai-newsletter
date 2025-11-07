@@ -3,14 +3,14 @@
 import { useAuth } from "@clerk/nextjs"
 import { Crown, Sparkles } from "lucide-react"
 import Link from "next/link"
-import * as React from "react"
+import { useState, useEffect } from "react"
 import { Badge } from "@/components/ui/badge"
 
 export function PlanBadge() {
   const { has } = useAuth()
-  const [isPro, setIsPro] = React.useState<boolean | null>(null)
+  const [isPro, setIsPro] = useState<boolean | null>(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const checkPlan = async () => {
       if (has) {
         const proStatus = await has({ plan: "pro" })
