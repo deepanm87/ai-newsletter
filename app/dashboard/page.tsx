@@ -1,5 +1,6 @@
 import { Sparkles } from "lucide-react"
 import { PageHeader } from "@/components/dashboard/page-header"
+import { RssFeedManager } from "@/components/dashboard/rss-feed-manager"
 
 export default function Dashboard() {
   return (
@@ -10,6 +11,12 @@ export default function Dashboard() {
           title="Dashboard"
           description="Manage your RSS feeds and generate AI-powered newsletters"
         />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <RssFeedManager />
+          </div>
+        </div>
       </div>
     </div>
   )
