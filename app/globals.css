@@ -129,3 +129,7 @@
 .cl-pricingTableCardFeePeriodNotice {
   color: white;
 }
+
+button {
+  cursor: pointer;
+}
