@@ -1,4 +1,5 @@
 import { Sparkles } from "lucide-react"
+import { NewsletterGenerator } from "@/components/dashboard/newsletter-generator"
 import { PageHeader } from "@/components/dashboard/page-header"
 import { RssFeedManager } from "@/components/dashboard/rss-feed-manager"
 
@@ -16,6 +17,11 @@ export default function Dashboard() {
           <div>
             <RssFeedManager />
           </div>
+
+          <div>
+            <NewsletterGenerator />
+          </div>
+          
         </div>
       </div>
     </div>
