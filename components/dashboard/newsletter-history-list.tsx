@@ -3,6 +3,7 @@
 import { formatDistanceToNow } from "date-fns"
 import { Calendar, ChevronRight, FileText, Trash2 } from "lucide-react"
 import Link from "next/link"
+import React from "react"
 import { useState, useTransition } from "react"
 import { toast } from "sonner"
 import { deleteNewsletterAction } from "@/actions/delete-newsletter"
@@ -42,7 +43,7 @@ export function NewsletterHistoryList({
   const [deletingId, setDeletingId] = useState<string | null>(null)
 
   const handleDelete = (
-    e: MouseEvent,
+    e: React.MouseEvent,
     newsletterId: string,
     newsletterTitle: string
   ) => {
