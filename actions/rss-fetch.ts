@@ -74,7 +74,7 @@ export async function fetchAndStoreFeed(feedId: string) {
       link: article.link,
       content: article.content,
       summary: article.summary,
-      pubDate: article.pubDate,
+      pubDate: new Date(article.pubDate),
       author: article.author,
       categories: article.categories,
       imageUrl: article.imageUrl
