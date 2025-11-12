@@ -166,7 +166,7 @@ export function extractArticles(
       link: item.link || "",
       content,
       summary,
-      pubDate,
+      pubDate: pubDate.toISOString(), // Convert Date to string
       author,
       categories,
       imageUrl,
